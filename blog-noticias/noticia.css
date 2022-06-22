@@ -210,7 +210,7 @@
   float: right;
   width: 20%;
   height: auto;
-  top: -1010px;
+  top: -1150px;
   right: 2px;
 }
   
@@ -246,287 +246,115 @@
   
   /*fim da área de acessibilidade*/
   
-/*footer*/
+/********************** footer *******************/
 
-
-#sec_footer{
+.footer{
   width: 100%;
-  height: 400px;;
+  height: auto;
   background-color: #9D6BFF;
-  margin-top: 22vh;
-  clear: right;
-}
-
-.img13{
-  position: absolute;
-  top: 134.5vh;
-  left: 76vw;
-}
-
-.palavras-footer{
-  width: 68vw;
+  font-family: inter;
   display: flex;
   flex-direction: row;
-  float: left;
-  justify-content: space-around;
+  color: #FFFFFF;
 }
 
-.palavras-footer h3{
-  font-size: 25px;
-  font-family: Inder;
-  color: white;
-  font-weight: bolder;
-  margin-top: 7vh;
+.footer a{
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
 
- }
-
-.palavras-footer p{
-  width: 99vw;
-  text-align: left;
-  color: white;
-  font-size: 19px;
-  margin-left: 8.5vw;
-  padding: 0.6vw;
-  font-family: Inder;
+.footer h1{
+  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 .plataforma{
-  margin-left: 5vw;
-}
-
-.plataforma h3{
-  margin-bottom:0.5vh;
-}
-
-.plataforma a{
-  width: 13vw;
-  display: block;
-  text-align: left;
-  color: white;
-  font-size: 19px;
-  margin-left: -0.5vw;
-  padding: 0.3vw;
-  font-family: Inder;
-  text-decoration: none;
-}
-
-.plataforma a:hover{
-  color: #0b0020;
-  cursor: pointer;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20px;
 }
 
 .social{
-  width: 13vw;
-  margin-left: 1vw;
-  padding-left: 4.5vw;
-}
-
-.social h3{
-  margin-bottom: 1vh;
-}
-
-.social a{
-    width: 10vw;
-    display: block;
-    text-align: left;
-    color: white;
-    font-size: 19px;
-    margin-left: 1.5vw;
-    padding: 0.5vw;
-    font-family: Inder;
-    text-decoration: none;
-}
-
-.social a:hover{
-  color:#0b0020;
-  cursor: pointer;
-}
-
-.social img{
-  float: left;
-  margin-top: 0.5vh;
-  margin-right: 0.5vw;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .contato{
-  width: 25vw;
+  width: 24%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.contato h3{
-  margin-bottom: 1vh;
-  margin-left: 7.5vw;
-}
-
-.contato p{
-  width: 40vw;
-  padding-left: 1.5vw;
-}
-
-.contato img{
-  float: left;
-  margin-top: 0.7vh;
-  margin-left: 7vw;
-  margin-right: 0.4vw;
-}
-
-.ptd_nav{
+.elementos{
   display: flex;
   flex-direction: row;
-  margin-left: 7vw;
-  justify-content: space-between;
-  color: white;
-  font-size: 15px;
-  font-family: Inder;
+  align-items: center;
 }
 
-.ptd a{
-  margin-top: 18vh;
-  font-weight: bold;
-  cursor: pointer;
+.elementos img{
+  padding-right: 10px;
 }
 
-.ptd a:hover{
-  color: #0b0020;
+.img-footer{
+  width: 25%;
+  height: 100%;
 }
 
-#menu_responsivo{
-  display: none;
+.img-footer{
+  width: 25%;
 }
+
+/********************** fim do footer *******************/
+
+
+
+
+@media only screen and (max-width:1206px){  
+
+  .img-footer{
+      display: none;
+  }
+
+  #container-posts{
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  #acessibilidade{
+    display: none;
+  }
+
+  #user-area{
+    display: none;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width:900px){  
+
+
+  .plataforma{
+      display: none;
+  }
+
+  .footer{
+      flex-direction: column;
+      padding-left: 20px;
+  }
 
   
-.img13{
-  position: absolute;
-  top: 134.5vh;
-  left: 76vw;
+
 }
 
-.palavras-footer{
-  width: 68vw;
-  display: flex;
-  flex-direction: row;
-  float: left;
-  justify-content: space-around;
-}
-
-.palavras-footer h3{
-  font-size: 25px;
-  font-family: Inder;
-  color: white;
-  font-weight: bolder;
-  margin-top: 7vh;
-
- }
-
-.palavras-footer p{
-  width: 99vw;
-  text-align: left;
-  color: white;
-  font-size: 19px;
-  margin-left: 8.5vw;
-  padding: 0.6vw;
-  font-family: Inder;
-}
-
-.plataforma{
-  margin-left: 5vw;
-}
-
-.plataforma h3{
-  margin-bottom:0.5vh;
-}
-
-.plataforma a{
-  width: 13vw;
-  display: block;
-  text-align: left;
-  color: white;
-  font-size: 19px;
-  margin-left: -0.5vw;
-  padding: 0.3vw;
-  font-family: Inder;
-  text-decoration: none;
-}
-
-.plataforma a:hover{
-  color: #0b0020;
-  cursor: pointer;
-}
-
-.social{
-  width: 13vw;
-  margin-left: 1vw;
-  padding-left: 4.5vw;
-}
-
-.social h3{
-  margin-bottom: 1vh;
-}
-
-.social a{
-  width: 10vw;
-  display: block;
-  text-align: left;
-  color: white;
-  font-size: 19px;
-  margin-left: 1.5vw;
-  padding: 0.5vw;
-  font-family: Inder;
-  text-decoration: none;
-}
-
-.social a:hover{
-  color:#0b0020;
-  cursor: pointer;
-}
-
-.social img{
-  float: left;
-  margin-top: 0.5vh;
-  margin-right: 0.5vw;
-}
-
-.contato{
-  width: 25vw;
-}
-
-.contato h3{
-  margin-bottom: 1vh;
-  margin-left: 7.5vw;
-}
-
-.contato p{
-  width: 40vw;
-  padding-left: 1.5vw;
-}
-
-.contato img{
-  float: left;
-  margin-top: 0.7vh;
-  margin-left: 7vw;
-  margin-right: 0.4vw;
-}
-
-.ptd_nav{
-  width: 65vw;
-  display: flex;
-  flex-direction: row;
-  margin-left: 7vw;
-  justify-content: space-between;
-  color: white;
-  font-size: 15px;
-  font-family: Inder;
-}
-
-.ptd a{
-  margin-top: 18vh;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.ptd a:hover{
-  color: #0b0020;
-}
-
-#menu_responsivo{
-  display: none;
-}
