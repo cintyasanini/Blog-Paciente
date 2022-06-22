@@ -165,6 +165,7 @@ ul{
   flex-direction: row;
   justify-content: space-around;
   padding-top: 40px;
+  flex-wrap: wrap
 }
 
 #option-podcast{
@@ -183,6 +184,12 @@ ul{
   text-decoration: none;
 }
 
+#option-podcast:hover{
+  transform: scale(1.1);
+  opacity: 90%;
+  transition:  1s;
+}
+
 #option-videos{
   position: relative;
   width: 196px;
@@ -199,6 +206,12 @@ ul{
   text-decoration: none;
 }
 
+#option-videos:hover{
+  transform: scale(1.1);
+  opacity: 90%;
+  transition:  1s;
+}
+
 #option-noticias{
   position: relative;
   width: 196px;
@@ -213,6 +226,12 @@ ul{
 #option-noticias a{
   color: #6B2CE8;
   text-decoration: none;
+}
+
+#option-noticias:hover{
+  transform: scale(1.1);
+  opacity: 90%;
+  transition:  1s;
 }
 
 #option-noticias img{
@@ -234,6 +253,12 @@ ul{
 #option-artigos a{
   color: #FFFFFF;
   text-decoration: none;
+}
+
+#option-artigos:hover{
+  transform: scale(1.1);
+  opacity: 90%;
+  transition:  1s;
 }
 
 #container-options h2{
@@ -357,149 +382,152 @@ ul{
 
 /*fim da área de acessibilidade*/
 
-/*footer*/
 
+/********************** footer *******************/
 
-#sec_footer{
+.footer{
   width: 100%;
-  height: 400px;;
+  height: auto;
   background-color: #9D6BFF;
-  margin-top: 22vh;
-  clear: right;
-}
-
-.img13{
-  position: absolute;
-  top: 134.5vh;
-  left: 76vw;
-}
-
-.palavras-footer{
-  width: 68vw;
+  font-family: inter;
   display: flex;
   flex-direction: row;
-  float: left;
-  justify-content: space-around;
+  color: #FFFFFF;
 }
 
-.palavras-footer h3{
-  font-size: 25px;
-  font-family: Inder;
-  color: white;
-  font-weight: bolder;
-  margin-top: 7vh;
+.footer a{
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
 
- }
+.footer h1{
+  padding-bottom: 20px;
+  padding-top: 50px;
 
-.palavras-footer p{
-  width: 99vw;
-  text-align: left;
-  color: white;
-  font-size: 19px;
-  margin-left: 8.5vw;
-  padding: 0.6vw;
-  font-family: Inder;
 }
 
 .plataforma{
-  margin-left: 5vw;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20px;
 }
 
-.plataforma h3{
-  margin-bottom:0.5vh;
-}
-
-.plataforma a{
-  width: 13vw;
-  display: block;
-  text-align: left;
-  color: white;
-  font-size: 19px;
-  margin-left: -0.5vw;
-  padding: 0.3vw;
-  font-family: Inder;
-  text-decoration: none;
-}
-
-.plataforma a:hover{
-  color: #0b0020;
-  cursor: pointer;
-}
 
 .social{
-  width: 13vw;
-  margin-left: 1vw;
-  padding-left: 4.5vw;
-}
-
-.social h3{
-  margin-bottom: 1vh;
-}
-
-.social a{
-  width: 10vw;
-  display: block;
-  text-align: left;
-  color: white;
-  font-size: 19px;
-  margin-left: 1.5vw;
-  padding: 0.5vw;
-  font-family: Inder;
-  text-decoration: none;
-}
-
-.social a:hover{
-  color:#0b0020;
-  cursor: pointer;
-}
-
-.social img{
-  float: left;
-  margin-top: 0.5vh;
-  margin-right: 0.5vw;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .contato{
-  width: 25vw;
+  width: 24%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.contato h3{
-  margin-bottom: 1vh;
-  margin-left: 7.5vw;
-}
-
-.contato p{
-  width: 40vw;
-  padding-left: 1.5vw;
-}
-
-.contato img{
-  float: left;
-  margin-top: 0.7vh;
-  margin-left: 7vw;
-  margin-right: 0.4vw;
-}
-
-.ptd_nav{
+.elementos{
   display: flex;
   flex-direction: row;
-  margin-left: 7vw;
-  justify-content: space-between;
-  color: white;
-  font-size: 15px;
-  font-family: Inder;
+  align-items: center;
 }
 
-.ptd a{
-  margin-top: 18vh;
-  font-weight: bold;
-  cursor: pointer;
+.elementos img{
+  padding-right: 10px;
 }
 
-.ptd a:hover{
-  color: #0b0020;
+.img-footer{
+  width: 25%;
+  height: 100%;
 }
 
-#menu_responsivo{
+.img-footer{
+  width: 25%;
+}
+
+.reparticao{
   display: none;
 }
+
+/********************** fim do footer *******************/
+
+
+
+/********************responsivo***********************/
+
+@media only screen and (max-width:1206px){  
+
+  .img-footer{
+      display: none;
+  }
+
+  #acessibilidade{ 
+    display: none;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width:900px){  
+
+
+  .plataforma{
+    display: none;
+  }
+
+  .footer{
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  #user-area{
+    display: none;
+  }
+
+  #container-options ul{
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container-options il{
+    padding-bottom: 20px;
+    align-items: center;
+    margin-left: 20px;
+    flex-direction: column;
+  }
+
+  #container-posts{
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  
+  #option-podcast{
+    margin-bottom: 30px;
+  }
+
+  #option-videos{
+    margin-bottom: 30px;
+  }
+
+  #option-artigos{
+    margin-bottom: 30px;
+  }
+
+}
+
+
+
+
+
+
